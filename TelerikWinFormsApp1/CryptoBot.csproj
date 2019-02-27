@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{61FE5BBA-C56C-4F92-A57C-0BA1791A86A7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TelerikWinFormsApp1</RootNamespace>
+    <AssemblyName>TelerikWinFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack, Version=1.9.0.0, Culture=neutral, PublicKeyToken=bd319b19eaf3b43a, processorArchitecture=MSIL">
+      <HintPath>..\packages\HtmlAgilityPack.1.9.0\lib\Net45\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40.Trial\Telerik.WinControls.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Telerik.WinControls.GridView, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40.Trial\Telerik.WinControls.UI.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="TelerikCommon, Version=2019.1.219.40, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL">
+      <HintPath>..\lib\RCWF\2019.1.219.40.Trial\TelerikCommon.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AIClass\CompairCoins.cs" />
+    <Compile Include="AIClass\ICheakStockApi.cs" />
+    <Compile Include="AIClass\MainStratagy.cs" />
+    <Compile Include="AIClass\OrderType.cs" />
+    <Compile Include="AIClass\ProfitCalc.cs" />
+    <Compile Include="Helpers.cs" />
+    <Compile Include="II.cs" />
+    <Compile Include="Interfesse\AccseptCoins.cs" />
+    <Compile Include="Interfesse\Coins.cs" />
+    <Compile Include="Keys.cs" />
+    <Compile Include="Models\HelpModels\ArbitrationModel.cs" />
+    <Compile Include="Models\HelpModels\ArbitrationViewModel.cs" />
+    <Compile Include="Models\HelpModels\EqualsCoinModel.cs" />
+    <Compile Include="Models\HelpModels\EqualsCoinViewModel.cs" />
+    <Compile Include="Models\HelpModels\TranzactionCoin.cs" />
+    <Compile Include="Models\HelpModels\TranzactionCoinViewModel.cs" />
+    <Compile Include="Models\InfoModels\BaseInfoModel.cs" />
+    <Compile Include="Models\InfoModels\BitbayInfoModel.cs" />
+    <Compile Include="Models\InfoModels\BittrexInfoModels.cs" />
+    <Compile Include="Models\InfoModels\CoinexInfoModel.cs" />
+    <Compile Include="Models\InfoModels\CryptoBridgeInfoModel.cs" />
+    <Compile Include="Models\InfoModels\ExmoInfoModel.cs" />
+    <Compile Include="Models\InfoModels\GateInfoModel.cs" />
+    <Compile Include="Models\InfoModels\KucoinInfoModel.cs" />
+    <Compile Include="Models\InfoModels\LiveCoinInfoModel.cs" />
+    <Compile Include="Models\InfoModels\NovaInfoModel.cs" />
+    <Compile Include="Models\InfoModels\PoloniexInfoModel.cs" />
+    <Compile Include="Models\InfoModels\YobitInfoModel.cs" />
+    <Compile Include="Models\OrdersModels\BaseOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\BitbayOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\BittrexOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\CoinexOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\CryptopiaOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\ExmoOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\GateOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\KucoinOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\LiveCoinOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\PoloniexOrderModel.cs" />
+    <Compile Include="Models\OrdersModels\YobitOrderModel.cs" />
+    <Compile Include="Models\TickerModels\BaseTickerModel.cs" />
+    <Compile Include="Models\TickerModels\BittrexTickerModel.cs" />
+    <Compile Include="Models\TickerModels\CoinexTickerModel.cs" />
+    <Compile Include="Models\TickerModels\ExmoTikerModel.cs" />
+    <Compile Include="Models\TickerModels\GetTikersModel.cs" />
+    <Compile Include="Models\TickerModels\YobiTickerModel.cs" />
+    <Compile Include="Models\TraidPairsModels\BaseTraidPair.cs" />
+    <Compile Include="Models\TraidPairsModels\BitbayTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\BittrexTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\CoinexTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\CryptoBridgePairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\ExmoTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\GatePairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\KucoinTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\LiveCoinTraidPairModel.cs" />
+    <Compile Include="Models\TraidPairsModels\NovaTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\PoloniexTraidPairsModel.cs" />
+    <Compile Include="Models\TraidPairsModels\YobitTraidPairsModel.cs" />
+    <Compile Include="Models\WalletModels\BaseWalletModel.cs" />
+    <Compile Include="Models\WalletModels\LiveCoinBalanceModel.cs" />
+    <Compile Include="OrdersCover.cs" />
+    <Compile Include="prox\SetProxy.cs" />
+    <Compile Include="RadForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RadForm1.Designer.cs">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Requsts\GetRequst.cs" />
+    <Compile Include="Requsts\PostRequst.cs" />
+    <Compile Include="Stocks\Bitbay.cs" />
+    <Compile Include="Stocks\Bittrex.cs" />
+    <Compile Include="Stocks\Coinex.cs" />
+    <Compile Include="Stocks\Crypto.cs" />
+    <Compile Include="Stocks\CryptoBridge.cs" />
+    <Compile Include="Stocks\Exmo.cs" />
+    <Compile Include="Stocks\Gate.cs" />
+    <Compile Include="Stocks\Kucoin.cs" />
+    <Compile Include="Stocks\LiveCoin.cs" />
+    <Compile Include="Stocks\Nova.cs" />
+    <Compile Include="Stocks\Poloniex.cs" />
+    <Compile Include="Stocks\Stock.cs" />
+    <Compile Include="Stocks\Yobit.cs" />
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="RadForm1.resx">
+      <DependentUpon>RadForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--sirinie -->
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties ShouldAddDPIScalingManifest="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
