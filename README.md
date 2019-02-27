@@ -10,4 +10,4 @@ This bot has implemented functions for finding the possible difference in the va
 
 For correct work, you need to add the API keys of the specified exchanges to the Keys.cs file. They can be found on the website of the exchange after registration.
 
-For dontion ETH:0xa83c5aac39ed229cc14d19aee7c948da33522552 
+For donation ETH:0xa83c5aac39ed229cc14d19aee7c948da33522552 
